@@ -1,0 +1,541 @@
+/*
+ Theme Name: Shopstar Child Theme
+ Theme URI: http://www.outtheboxthemes.com/themes/shopstar/
+ Description: A Shopstar! child theme 
+ Author: Out the Box
+ Author URI: http://www.outtheboxthemes.com/
+ Template: shopstar
+ Version: 1.0.0
+*/
+
+
+/* Header styling */
+
+.top-bar {
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 10px -3px;
+}
+
+.site-header .branding .title {
+    font-size: 35px;
+    vertical-align: text-bottom;
+}
+
+.site-header .branding .description {
+    margin-top: 1em;
+}
+
+.brand-name .title {
+    max-width: 50%;
+}
+
+.top-bar .so-widget-sow-social-media-buttons .sow-social-media-button {
+    padding: 0.5em 0.3em;
+}
+
+.top-bar .social-media-button-container a:last-child {
+    width: auto;
+    padding-right: 0;
+}
+
+.top-bar .social-media-button-container a:last-child::after {
+    content: "954-955-8888";
+    font-weight: 400;
+    margin-left: 3px;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 780px) {
+    .top-bar .widget_sow-social-media-buttons {
+        margin: 0;
+    }
+    .top-bar .so-widget-sow-social-media-buttons .sow-social-media-button {
+        font-size: 18px;
+        padding: 0.25em 0.3em 0.25em 0;
+        width: auto;
+    }
+}
+
+img.custom-logo {
+    max-height: 55px;
+    max-width: 45%;
+    width: auto;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.header-image .overlay {
+    text-shadow: 0px 0px 5px #000000;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: white;
+    line-height: 1.5em;
+}
+
+.centered-title img {
+    background-color: #f6eff0;
+}
+
+.search-block .search-submit,
+.widget_search .search-submit {
+    display: initial;
+}
+
+
+/* Miscellaneous tweaks */
+
+.widget_sow-social-media-buttons .so-widget-sow-social-media-buttons .social-media-button-container {
+    text-align: unset;
+}
+
+h1.page-not-found {
+    font-size: 50px;
+    text-transform: unset;
+}
+
+.contact-info-container {
+    line-height: 1.5em;
+    margin: 0px;
+    text-align: initial;
+}
+
+.contact-info-container td a span {
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.contact-info-container .contact-label {
+    width: 18%;
+}
+
+.contact-info-container table {
+    margin-bottom: 0;
+}
+
+.certification-logos {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.certification-logos p {
+    margin: 7px 0 0 0;
+    font-size: small;
+}
+
+#pl-33 .certification-logos #panel-33-2-0-0 {
+    margin-bottom: 0px;
+}
+
+.sow-image-grid-wrapper .sow-image-grid-image {
+    display: inline-block;
+    max-width: 30%;
+}
+
+
+/* Style links per client, on products and home page only */
+
+#tab-description a,
+.so-widget-sow-editor p>a,
+.restricted-prescription a {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    color: blue;
+}
+
+.feedzy-rss ul li {
+    width: 45%;
+    display: inline-table;
+}
+
+.feedzy-rss .rss_item .title {
+    font-size: larger;
+}
+
+#blog-posts {
+    padding-left: unset;
+    padding-right: unset;
+}
+
+#welcome-video {
+    padding: 10px;
+    border: 2px solid #d8d8d8;
+    border-radius: 15px;
+    /* the video controls are spilling out for some reason */
+    overflow: hidden;
+}
+
+#welcome-text h2 {
+    margin-bottom: 20px;
+}
+
+#welcome-text h4 {
+    text-align: center;
+    font-weight: 500;
+    color: #b1ce8a;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#secondary ul.product-categories li.cat-item {
+    font-weight: normal;
+}
+
+
+/* Ensure the wait spinner appears after checkout button is pressed */
+
+.blockUI.blockOverlay {
+    background-position: center 50% !important;
+    background-repeat: no-repeat !important;
+    position: fixed !important;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* Social sharing buttons */
+
+div.summary.entry-summary .wc_ss_btns {
+    display: none;
+}
+
+div.wc_ss_btns>span~span {
+    font-size: large;
+}
+
+
+/* Subscription in cart tweaks */
+
+.woocommerce .shop_table.sumo_order_subscription {
+    border: 4px solid #b1ce8ab3;
+    table-layout: unset;
+}
+
+.woocommerce .shop_table.sumo_order_subscription tr:first-child td {
+    text-align: center;
+}
+
+.woocommerce .shop_table.sumo_order_subscription td select {
+    min-width: 150px;
+}
+
+.woocommerce .sumo_order_subscription_users_status {
+    font-weight: bold;
+}
+
+input#sumo_order_subscription_status {
+    margin-left: 0.25em;
+}
+
+.order-subscription-label {
+    display: inline-grid;
+    line-height: 2em;
+}
+
+.order-subscription-label a span {
+    color: blue;
+    border-bottom: 1px dashed blue;
+}
+
+.order-subscription-label a span:hover {
+    cursor: pointer;
+    color: inherit;
+}
+
+#popmake-275 .pum-title {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #315b7c55;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+#popmake-275 .pum-content.popmake-content p {
+    margin-bottom: 12px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#popmake-275 .pum-content.popmake-content p img {
+    max-width: 25%;
+    width: 125px;
+    box-shadow: 0 0 24px #ccc;
+    border-radius: 5%;
+    margin: 15px 1.75em 15px 0;
+    padding: 10px;
+}
+
+
+/* Tweak to the tabbed control on the product page */
+
+@media only screen and (min-width:780px) {
+    ul.wc-tabs li:not(.active) ::after {
+        content: ">";
+        font-size: 22px;
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+}
+
+
+/* Restricted products */
+
+.restricted-prescription {
+    padding: 5px 10px;
+    border: 2px solid grey;
+    background-color: #f6eff0;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.restricted-prescription h2 {
+    text-align: center;
+}
+
+.restricted-prescription p {
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+#restricted-product-approval-code_field {
+    margin-bottom: 2em;
+}
+
+
+/* Home page featured product display */
+
+ul.product_list_widget a img {
+    float: none !important;
+}
+
+
+/* Home page promo banner */
+
+.promo-banner h2 {
+    font-weight: 700;
+    color: #19499e;
+    font-size: 16px;
+}
+
+.promo-banner h2:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+    text-shadow: 2px 2px #acad7e;
+}
+
+.promo-banner .banner-top-image img {
+    width: 252px !important;
+}
+
+#pgc-33-1-0 {
+    background-image: url('https://moventisusa.com/hpcstore/wp-content/uploads/2019/07/dog-car-out-window-curve.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+@media only screen and (max-width:780px) {
+    body,
+    .site-header .site-top-bar-left a,
+    .site-header .site-top-bar-right a,
+    .site-header .site-header-right a,
+    .breadcrumbs,
+    div.wpforms-container form.wpforms-form .wpforms-field-label,
+    div.wpforms-container-full .wpforms-form .wpforms-field-sublabel,
+    div.wpforms-container form.wpforms-form input[type="text"],
+    div.wpforms-container form.wpforms-form input[type="email"],
+    div.wpforms-container form.wpforms-form input[type="tel"],
+    div.wpforms-container form.wpforms-form input[type="number"],
+    div.wpforms-container form.wpforms-form input[type="url"],
+    div.wpforms-container form.wpforms-form input[type="password"],
+    div.wpforms-container form.wpforms-form input[type="search"],
+    div.wpforms-container form.wpforms-form select,
+    div.wpforms-container form.wpforms-form textarea,
+    input,
+    select,
+    textarea,
+    .site-footer .widgets .widget a,
+    .header-image .overlay,
+    .slider-container.default .slider .slide .overlay {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .site-header .branding .description {
+        font-size: 17px;
+    }
+    .site-footer .widgets {
+        font-size: initial;
+    }
+    .site-header.centered .branding {
+        text-align: center;
+        padding: 25px 0 0px 0;
+    }
+    .site-header .branding .title {
+        font-size: 20px;
+        line-height: 2em;
+    }
+    .site-header .top-bar .right a {
+        font-size: 12px;
+    }
+    .contact-info-container {
+        margin: 0 0 0 15%;
+    }
+    body.home .woocommerce ul.product_list_widget li,
+    .widget_woocommerce_products ul li {
+        width: 40%;
+        margin: 0 15px 20px 0;
+    }
+    .header-image {
+        background-image: url(https://moventisusa.com/hpcstore/wp-content/uploads/2018/11/cropped-header-woman-dog-1499x636.jpg);
+        min-height: 200px;
+        background-size: cover;
+    }
+    .header-image img {
+        display: none;
+    }
+    .header-image .overlay {
+        font-size: large;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 0;
+    }
+    .feedzy-rss ul li {
+        width: 100%;
+        display: initial;
+    }
+    #blog-posts {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    #blog-posts h3 {
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    div.rss_content {
+        padding-bottom: 2em;
+    }
+    /* Subscription in cart tweaks */
+    .woocommerce .shop_table.sumo_order_subscription td {
+        max-width: 60%;
+    }
+    .widget-area .widget ul li a {
+        font-size: 16px;
+    }
+    body.post-type-archive-product.woocommerce ul.products li.product h2,
+    body.post-type-archive-product.woocommerce-page ul.products li.product h2,
+    body.post-type-archive-product.woocommerce ul.products li.product h3,
+    body.post-type-archive-product.woocommerce-page ul.products li.product h3 {
+        font-size: 16px !important;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}
+
+
+/*  Shop page filter bar (only displayed on mobile) */
+
+#mobile-shop-filter-bar {
+    display: none;
+}
+
+#mobile-shop-filter-bar.closed a::before {
+    content: "+ Show";
+    margin-right: 1vw;
+}
+
+#mobile-shop-filter-bar.open a::before {
+    content: "X Hide";
+    margin-right: 1vw;
+}
+
+.woocommerce-result-count,
+.woocommerce-ordering {
+    position: initial;
+}
+
+@media only screen and (max-width:990px) {
+    #mobile-shop-filter-bar {
+        font-weight: bold;
+        display: inherit;
+        position: sticky;
+        position: -webkit-sticky;
+        -webkit-backface-visibility: hidden;
+        top: 1px;
+        z-index: 10000;
+        margin-bottom: 0;
+        padding: 6px 10px;
+        text-align: center;
+        background-color: white;
+    }
+    #mobile-shop-filter-bar a {
+        background-color: lavender;
+        padding: 0.5em;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 5px;
+    }
+    .woocommerce-result-count:not(.pop-up-sidebar) {
+        display: inherit !important;
+        position: sticky;
+        position: -webkit-sticky;
+        -webkit-backface-visibility: hidden;
+        top: 42px;
+        background: white;
+        z-index: 10000;
+        padding-top: 10px !important;
+    }
+    .woocommerce-result-count.pop-up-sidebar {
+        position: absolute !important;
+        left: 700px;
+    }
+    .woocommerce-ordering:not(.pop-up-sidebar) {
+        display: inherit !important;
+        position: sticky;
+        position: -webkit-sticky;
+        -webkit-backface-visibility: hidden;
+        top: 42px;
+        /* display wide enough for side-by-side with result count */
+        background: white;
+        z-index: 10000;
+    }
+    .woocommerce-ordering.pop-up-sidebar {
+        position: absolute !important;
+        left: 700px;
+    }
+    #secondary.pop-up-sidebar {
+        position: absolute;
+        transition: 0.75s;
+        left: 0;
+        top: 159px;
+        padding: 0 2em 0 5% !important;
+        z-index: 9000;
+        background-color: white;
+        margin-left: 23px;
+        box-shadow: -6px 6px 6px #e6e6e6;
+    }
+    #secondary:not(.pop-up-sidebar) {
+        padding: 20px 0 !important;
+        position: inherit;
+        transition: 1s;
+        top: 290px;
+        left: 0;
+    }
+    #dgwt_wcas_ajax_search-2>h2 {
+        padding-top: 2em;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .woocommerce-ordering:not(.pop-up-sidebar) {
+        top: 76px;
+    }
+}
+
+
+/** Disable floating social share bar on shop page on mobile **/
+
+@media only screen and (max-width:560px) {
+    .woocommerce.post-type-archive-product .wc_ss_btns {
+        display: none;
+    }
+}
